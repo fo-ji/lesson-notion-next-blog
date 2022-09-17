@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import Layout from '../components/Layout'
+import Card from '../components/Card'
 import { siteConfig } from '../site.config'
 import { sampleCards } from '../utils/sample'
 
@@ -15,7 +16,7 @@ const Home: NextPage = () => {
         <div className="grid md:gap-6 mt-10 md:grid-cols-2 w-full my-12">
           {/* Card */}
           {sampleCards.map((page, index) => (
-            <p key={index}>{page.name}</p>
+            <Card key={index} page={page} />
           ))}
         </div>
       </div>
