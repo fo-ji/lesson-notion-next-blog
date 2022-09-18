@@ -16,7 +16,7 @@ export type PageProps = {
 }
 
 export type CardProps = {
-  page: PageProps
+  page: PageType
 }
 
 export type ArticleProps = CardProps
