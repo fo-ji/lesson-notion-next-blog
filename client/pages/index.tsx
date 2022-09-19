@@ -6,12 +6,11 @@ import Link from 'next/link'
 import Layout from '../components/Layout'
 import Card from '../components/Card'
 import { siteConfig } from '../site.config'
-import { sampleCards } from '../utils/sample'
 import { fetchPages } from '../utils/notion'
 import { IndexProps } from '../types/types'
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { results } = await fetchPages()
+  const { results } = await fetchPages({})
   return {
     props: {
       pages: results ? results : [],
