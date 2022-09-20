@@ -29,11 +29,14 @@ export type ArticleMetaProps = CardProps
 
 export type Params = ParsedUrlQuery & {
   slug: string
+  tag: string
 }
 
 export type IndexProps = {
   pages: PageType[]
 }
+
+export type TagProps = IndexProps & { tag: string }
 
 export type BlockProps = { block: BlockType }
 
