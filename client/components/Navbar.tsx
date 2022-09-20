@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import { siteConfig } from '../site.config'
+import Breadcrumb from './Breadcrumb'
 
 const Navbar = () => {
   return (
@@ -16,6 +17,7 @@ const Navbar = () => {
             </a>
           </Link>
           {/* Breadcrumb */}
+          <Breadcrumb />
         </div>
       </div>
     </nav>
